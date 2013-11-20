@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+div#quiz-wrapper section {
+	display:none;
+}
+
+#quiz-wrapper section div.explanation {
+	display:none;	
+	cursor: pointer;
+	float: none;
+	clear: left;
+	position: relative;
+	margin-top: 40px;
+}
+
+
+#quiz-wrapper section ul {
+	display:block;
+	clear:both;
+	height: auto;
+	overflow: hidden;
+}
+#quiz-wrapper section ul li {
+	display:block;
+	float:left;
+	cursor:pointer;
+	background:#C7C7C7;
+	padding:5px;
+	margin:5px;
+	width: 100px;
+}
+
+#quiz-wrapper section ul.reveal li {
+	cursor:default;
+}
+
+#quiz-wrapper section li:hover {
+	border:solid 1px #8A8A8A;
+}
+
+#quiz-wrapper section li.incorrect {
+	background:#FF3B3F;
+}
+
+#quiz-wrapper section li.incorrect:after {
+	content:"incorrect!";
+	display: block;  position: absolute;  z-index: -1;
+	background: #fff;
+	color: #f00;
+}
+
+#score {display:none;
+}
+#quiz-wrapper section li.correct {
+	background:#4CB86D;
+}
+
+#quiz-wrapper section ul.reveal li.correct.right:after {
+	content:"well done!";
+}
+
+#quiz-wrapper section ul.reveal li.right:after {
+	content:"was correct";
+	display: block;
+	position: absolute;
+	color: #0f5;
+}
+
+#quiz-wrapper section ul.rankings {display:none;
+}
+div.explanation:after {
+	content:"next question";
+	display:block;
+	position:relative;
+	top:20px;
+	padding:5px;
+	background:#C1C1C1;
+	border:solid 1px #A48F8F;
+	cursor:pointer;
+	width: 200px;
+	z-index: 1111;
+}
+
+div.explanation:hover:after {
+	background:#e1e1e1;
+}
