@@ -45,16 +45,14 @@ jQuery(document).ready(function($) {
 		
 		$(this).parent("section").fadeOut(function(e) 
 		{
-			$(this).next("section").fadeIn(function(e)
-			{
-				if ($(this).hasClass("theend"))
+			if ($(this).next("section").hasClass("theend"))
 				{
 					// we're at the end so display final stuffs
-					
+					nextSection = $(this).next("section");
 					// now work out a range.  
 					// count the options
 					rankings = {}
-					rankings.divisions = $(this).find("ul.rankings li").length;
+					rankings.divisions = nextSection.find("ul.rankings li").length;
 					
 					rankings.percentiles = 100 / rankings.divisions;
 					
@@ -63,18 +61,16 @@ jQuery(document).ready(function($) {
 					//eg 68% and we have 16.7%
 					
 					// so 
-					rankings.ranking = Math.floor( rankings.scorepercent / rankings.percentiles );
+					rankings.ranking = Math.floor( rankings.scorepercent / rankings.percentiles ) -1;
 					
-					rankings.rankingexp = $(this).find("ul li:eq(" + rankings.ranking +")").html();
+					rankings.rankingexp = nextSection.find("ul li:eq(" + rankings.ranking +")").html();
 					
 					console.log(rankings);
 					$('#explainranking').html( rankings.rankingexp );
 					
 				}
-				
-				
-				
-			});
+			
+			$(this).next("section").fadeIn();
 			$(this).remove();
 		});
 		
