@@ -1,11 +1,57 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-div#quiz-wrapper section {
-	display:none;
+#share {
+ position:absolute;
+ margin:auto;
+left:0;right:0;
+top:0;bottom:0;
+width:400px;
+height:200px;
+border: 1px solid #ccc;
+padding:20px;
+background:#fff;
 }
 
+#qz-share-button {
+	cursor:pointer;
+border:1px solid #fff;
+}
+
+#qz-share-button:hover {
+border:1px solid #ccc;
+}
+
+div#quiz-wrapper {
+	min-height:500px;
+	
+}
+
+#quiz-wrapper h2 {
+	font-size:24px;
+	margin:10px;
+	text-align:center
+}
+div#quiz-wrapper section {
+	display:none;
+	width: 640px;
+}
+
+#final-score{
+	font-size:36px;
+	text-align:center;
+	width:100%;
+	margin:10px;
+}
+
+#explainranking {
+	width:100%;
+	text-align:center;
+	font-size:24px;
+	color:#999;
+	font-style:italic;
+	margin:10px;
+}
 #quiz-wrapper section div.explanation {
 	display:none;	
 	cursor: pointer;
@@ -21,15 +67,42 @@ div#quiz-wrapper section {
 	clear:both;
 	height: auto;
 	overflow: hidden;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+#quiz-wrapper section ul li div {
+	width:100% !important;
 }
 #quiz-wrapper section ul li {
 	display:block;
 	float:left;
 	cursor:pointer;
-	background:#C7C7C7;
-	padding:5px;
-	margin:5px;
-	width: 100px;
+	background: #ffd600;
+	padding: 3px;
+	margin: 1%;
+	width: 29%;
+	border-radius:5px;
+	list-style: none;
+	min-height: 85px;
+	text-align: center;
+	border: solid 2px #fff;
+	position: relative;
+	color: #000;
+	font-weight: bold;
+	font-size: larger;
+	font-family: "Gill Sans W01 Medium", sans-serif;
+}
+
+#quiz-wrapper section ul li img {
+	width: 100%;
+	height: auto;
+	max-height: 230px;
+}
+
+#quiz-wrapper section ul li p {
+	margin:0;
+
 }
 
 #quiz-wrapper section ul.reveal li {
@@ -37,7 +110,7 @@ div#quiz-wrapper section {
 }
 
 #quiz-wrapper section li:hover {
-	border:solid 1px #8A8A8A;
+	border:solid 2px #8A8A8A;
 }
 
 #quiz-wrapper section li.incorrect {
@@ -46,43 +119,82 @@ div#quiz-wrapper section {
 
 #quiz-wrapper section li.incorrect:after {
 	content:"incorrect!";
-	display: block;  position: absolute;  z-index: -1;
+	display: block;  
+	position: absolute;  
 	background: #fff;
 	color: #f00;
+	width: 100%;
+	border-radius: 5px;
+	font-style: italic;
+	width: 96%;
+	bottom: 4px;
 }
 
 #score {display:none;
 }
 #quiz-wrapper section li.correct {
-	background:#4CB86D;
+	background: rgba(76, 184, 109, 0.41);
 }
 
 #quiz-wrapper section ul.reveal li.correct.right:after {
 	content:"well done!";
 }
 
+#quiz-wrapper section ul.reveal li.right {
+	border: 2px solid #4cb86d;
+	
+}
+
 #quiz-wrapper section ul.reveal li.right:after {
 	content:"was correct";
 	display: block;
 	position: absolute;
-	color: #0f5;
+	color: #128B3A;
+	background: #fff;
+	border-radius: 5px;
+	font-style: italic;
+	width: 96%;
+	bottom: 3px;
 }
 
 #quiz-wrapper section ul.rankings {display:none;
 }
-div.explanation:after {
+div.explanation:after, button.jq-begin {
 	content:"next question";
-	display:block;
-	position:relative;
-	top:20px;
-	padding:5px;
-	background:#C1C1C1;
-	border:solid 1px #A48F8F;
-	cursor:pointer;
-	width: 200px;
-	z-index: 1111;
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffe261;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffe261;
+	box-shadow:inset 0px 1px 0px 0px #ffe261;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fad232), color-stop(1, #d1ad0b) );
+	background:-moz-linear-gradient( center top, #fad232 5%, #d1ad0b 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fad232', endColorstr='#d1ad0b');
+	background-color:#fad232;
+	-webkit-border-top-left-radius:30px;
+	-moz-border-radius-topleft:30px;
+	border-top-left-radius:30px;
+	-webkit-border-top-right-radius:30px;
+	-moz-border-radius-topright:30px;
+	border-top-right-radius:30px;
+	-webkit-border-bottom-right-radius:30px;
+	-moz-border-radius-bottomright:30px;
+	border-bottom-right-radius:30px;
+	-webkit-border-bottom-left-radius:30px;
+	-moz-border-radius-bottomleft:30px;
+	border-bottom-left-radius:30px;
+	text-indent:0;
+	border:2px solid #ffd000;
+	display:inline-block;
+	color:#0d0c0d;
+	font-family:Arial;
+	font-size:25px;
+	font-weight:bold;
+	font-style:normal;
+	width:100%;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:-1px 0px 7px #f2df8a;
+	margin: 10px 0 20px 0;
 }
 
 div.explanation:hover:after {
-	background:#e1e1e1;
+	background: #FFE352;
 }

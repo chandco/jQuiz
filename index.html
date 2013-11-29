@@ -2,85 +2,215 @@
 <html>
 <head>
 <meta charset="utf-8">
-        <link href="jQuiz.css" media="screen" rel="stylesheet" type="text/css">
-
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="jQuiz.js"></script>
+<link href="jQuiz.css" media="screen" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+<div id="wrapper" style="width:650px;left:200px;position:relative;">
+  
+<img alt="" src="http://expertvideoempire.com/wp-content/plugins/fb_share_code/facebook-share1.png" id='qz-share-button'/>
+  
+  [quizinit]
+  <div id="quiz-wrapper">
 
-<h1>This is always going to be shown</h1>
+  <div id="quiz-intro">
+    
+    Last month, we met up with history buff Charles Graham for a <a href="http://www.freetoursbyfoot.com/london-tours/walking-tours/free-city-of-london-tour/">walking tour</a> of the historic ‘Square Mile’, the City of London. We had a fantastic time, learning some of the hidden secrets and amazing stories that make London the greatest city in the world. We wanted to share some of the things we learned with you, but we knew that no-one could put it quite as well as Charles himself. So we’ve asked him to put together a quiz to test your knowledge. Over to Charles, and his good friend Doctor Johnson…
+    <blockquote>"Why, Sir, you find no man, at all intellectual, who is willing to leave London. No, Sir, when a man is tired of London, he is tired of life; for there is in London all that life can afford."</blockquote>
+So said Doctor Johnson in 1777, and yet who among us can really say they know the City of London?
 
-<div id="quiz-wrapper">
+Far too few people have been to the Tower of London, taken there by their parents when they were little or not at all, when if they went to Madrid or Paris, they would instantly go and see the equivalent landmarks there. The problem is that London residents often just take their city for granted. After all, it’s always there.
+
+But how best to see the sights when people have so many ways to get around? From the London underground, the Croydon trams, by car, by bus, by train, by motorbike, or even by Boris bike. I even think there’s a helipad somewhere in Battersea.  Historically, there were also Hackney Carriages, the horse drawn omnibus, or even the Sedan Chair that was so popular in the 17th to early 19th century. Indeed, one of the most popular means historically has recently made a comeback. When there was only one bridge, you could easily hail a boat from the north bank of the Thames. If you wanted to go upstream you said: “Westward Ho!” If you wanted to go downstream you said: “Eastward Ho!” If you want to go to the south bank you said: “Oars!” As many people visiting the South Bank in the 16th and 17th century were going to visit ladies of dubious repute, it’s possible that there may be  a link between the words “Oars” and, well, “Whores”.
+
+Perhaps the best way to get to see the city is foot. So, with that in mind…
 
 <button class="jq-begin">Begin Quiz!</button>
-<div id="score">Your Score: <span>0</span></div>
 
-    <section class="question" id="question1">
-        <h2 class="question">Which of these is bigger?</h2>
-        
-        <ul class="answers ready">
-            <li class="wrong">You</li>
-            <li class="right">Your momma</li>
-            <li class="wrong">etc...</li>
-            <li class="right">You</li>
-        </ul>
-        
-        <div class="explanation">
-            It's actually your momma because nothing is bigger than that
-        </div>
-    </section>
-    
-    <section class="question" id="arbitraryid2">
-        <h2 class="question">Which of these is bigger?</h2>
-        
-        <ul class="answers ready">
-            <li class="wrong">You</li>
-            <li class="right">Your momma</li>
-            <li class="wrong">etc...</li>
-        </ul>
-        
-        <div class="explanation">
-            It's actually your momma because nothing is bigger than that
-        </div>
-    </section>
-    
-    <section class="question" id="arbitraryid2">
-        <h2 class="question">Which of these is bigger?</h2>
-        
-        <ul class="answers ready">
-            <li class="wrong">You</li>
-            <li class="right">Your momma</li>
-            <li class="wrong">etc...</li>
-        </ul>
-        
-        <div class="explanation">
-            It's actually your momma because nothing is bigger than that
-        </div>
-    </section>
-    
-
-    
- <section id="arbitraryid2" class="theend">
-<div id="final-score">You scored <span class='yourscore'>0</span> out of a possible <span class='totalscore'>0</span>!</div>
-
-<ul class="rankings">
-<li class="1">You're really crap</li>
-<li class="2">25-50%</li>
-<li class="3">50-75%</li>
-<li class="4">75-100%</li>
-</ul>
-<div id="explainranking">
 </div>
-Share your score and stuff
 
- </section>
+<div id="score">Your Score: <span>0</span></div>
+<section class="question">
+<h2 class="question">Which of these famous London viewpoints is the highest?</h2>
+Some text here
+<ul class="answers ready">
+	<li class="wrong"><img class="aligncenter size-large wp-image-3239" alt="shutterstock_153138011" src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/shutterstock_153138011.jpg" width="280" height="180" />St Paul’s Cathedral</li>
+	<li class="right"><img class="aligncenter size-large wp-image-3235" alt="The London Eye" src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/shutterstock_114219580.jpg" width="280" height="180" />The London Eye</li>
+	<li class="wrong">
+
+<img class="size-full wp-image-3233" alt="Westminster Cathedral" src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/shutterstock_105707822.jpg" width="280" height="180" />Westminster Cathedral</li>
+</ul>
+<div class="explanation">At 135 metres high, the London Eye just pips St Paul’s to the tallest of these three viewpoints, although at 100 metres it’s not exactly short stuff itself. Westminster Cathedral (which is not to be confused with the Abbey!) comes in at 87 metres, and has lift access for those whose legs aren’t as strong. Interestingly, if you’re a British citizen and apply to your MP you can also see the view from Big Ben, at 97 metres high.
+Other good natural viewpoints in and around south London include Greenwich and Shooter Hill to the south east, Crystal Palace and one tree hill in the south , and Henry VIII’s Mound in Richmond Park. Parliament Hill, Primrose Hill, Harrow on the Hill and Hampstead Heath are worth a visit to the north.
+A lost London viewpoint is the city’s former tallest building. At 171 metres the BT Tower featured a revolving restaurant and cocktail bar, but was closed in 1980.</div>
+</section><section class="question">
+<h2 class="question"><strong>Which the largest bell in London?</strong></h2>
+<ul class="answers ready">
+	<li class="wrong"><img class="aligncenter size-large wp-image-3246" alt="shutterstock_98304368" src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/shutterstock_98304368.jpg" width="280" height="180" />Big Ben</li>
+	<li class="right"><img class="aligncenter size-large wp-image-3245" alt="shutterstock_84619822" src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/shutterstock_84619822.jpg" width="280" height="180" />Great Paul</li>
+</ul>
+<div class="explanation">At 16.5 tonnes, Great Paul is the largest London Bell, but that’s no slight on Big Ben, which at 13.5 tonnes is only 3 tonnes lighter.</div>
+</section><section class="question">
+<h2 class="question">St Paul’s Cathedral...</h2>
+<p><img class="aligncenter size-large wp-image-3243" alt="shutterstock_39319828" src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/shutterstock_39319828.jpg" width="280" height="180" /></p>
+<ul class="answers ready">
+	<li class="wrong">...the largest cathedral in the UK</li>
+	<li class="wrong">...has the largest dome of any church in the world</li>
+	<li class="right">...has Europe's largest crypt</li>
+</ul>
+<div class="explanation">The crypt of St Paul’s Cathedral is the largest in Europe and includes the tombs of such notable personages as Admiral Nelson, Lord Wellington and Sir Christopher Wren. Liverpool cathedral is actually the UK’s largest Cathedral, standing at 101 metres high. Both St Peter’s in Vatican City at 42 metres and the Basilica di Santa Maria del Fiore in Florence at 45 metres have larger domes than St Pauls at a diminutive 34 metres.</div>
+</section><section class="question">
+<h2 class="question">How are London Bridge, Southwark Bridge, Blackfriars Bridge, Millennium Bridge and Tower Bridge paid for and maintained?</h2>
+<p class="question"> <img class="aligncenter size-large wp-image-3238" alt="shutterstock_149620136" src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/shutterstock_149620136.jpg" width="280" height="180" /></p>
+<ul class="answers ready">
+	<li class="right">From the Bridge House Estates</li>
+	<li class="wrong">From a bequest Dick Wittington, thrice Mayor of London</li>
+	<li class="wrong">From fixed levy charges on the City of London businesses.</li>
+</ul>
+<div class="explanation">
+
+The Bridge House Estates consists of land left in wills by various city merchants for the maintenance of old London Bridge which was built in 1201. The bridge was vital for London prosperity, so merchants would leave their money first to god and second to the bridge. The last such bequest was in 1675. Today the fund has a 300 million pound surplus after paying for, maintaining and building all the bridges and gives 15 million pounds to charity each year.
+
+</div>
+</section><section class="question">
+<h2>During the Second World War the Royal College of Surgeons was directly hit by a bomb, causing massive damage to the building. However which room survived the impact?
+</h2>
+<p><img src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/surgeons-quiz.jpg" alt="surgeons-quiz" width="280" height="180" class="alignnone size-full wp-image-3347" /></p>
+<ul class="answers ready">
+	<li class="wrong">Edward Lumley Hall</li>
+	<li class="wrong">The Hunterian Museum</li>
+	<li class="right">The Library</li>
+</ul>
+<div class="explanation"></div>
+</section><section class="question">
+<h2 class="question">London Guildhall is allegedly on site of the palace of which ancient British King?</h2>
+<p class="question"> <img class="aligncenter size-large wp-image-3244" alt="shutterstock_53046877" src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/shutterstock_53046877.jpg" width="280" height="180" /></p>
+<ul class="answers ready">
+	<li class="wrong">Caratacus</li>
+	<li class="right">Brutus</li>
+	<li class="wrong">Tasciovanus</li>
+</ul>
+<div class="explanation">
+
+The Guildhall is actually probably not on the site of king palace who is probably fictional, however it is on the site of an ancient Roman amphitheatre. Caractacus and Tasciovanus both fought against imperial rule from Rome, the first against Claudius and the second against Julius Ceasar himself.
+
+</div>
+</section><section class="question">
+<h2 class="question">Which killed the most people in London?</h2>
+<p><img src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/shutterstock_113982793_2.jpg" alt="shutterstock_113982793_2" width="133" height="200" class="alignnone size-full wp-image-3356" /></p>
+<ul class="answers ready">
+  <li class="wrong">London Blitz</li>
+  <li class="right">The Great Plague</li>
+  <li class="wrong">Boudicca’s Sack of London</li>
+</ul>
+<div class="explanation">
+
+The Great Plague of 1665-1666, the last major epidemic of bubonic plague in the Kingdom of England, killed approximately 100,000 people, which at the time was 15% of the population. In the early 1940s, the London Blitz caused widespread devastation and as many as 43,000 deaths. According to Tacitus, Boudicca’s Sack of the city killed 70,000 people, although modern historians believe the number to be closer to 20,000. Surprisingly, the Great Fire of London is only believed to have caused around 10 fatalities.
+
+</div>
+</section><section class="question">
+<h2 class="question">Richard Whittington (c. 1354–1423), better known as Dick, was Lord Mayor of London three time. Which of these did he not do?</h2>
+<p><img src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/cat.jpg" alt="cat" width="280" height="180" class="alignnone size-full wp-image-3346" /></p>
+<ul class="answers ready">
+	<li class="wrong">Create a 100-seat public toilet that operated until the 19th century</li>
+	<li class="wrong">Burnt publicly the debts Henry V owed him</li>
+	<li class="right">Fight at the Battle of Agincourt</li>
+</ul>
+<div class="explanation">
+
+Before the likes of Ken Livingstone and Boris Johnson, Dick Whittington was London’s most famous mayor, with folktales and pantomimes named after him. Whether he actually had a cat remains uncertain.
+
+</div>
+</section><section class="question">
+<h2 class="question">One of our City Livery Halls, Brewers' Hall, was filmed as part of what film starring Ewan McGregor?</h2>
+<p><img src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/brewers-quiz.jpg" alt="brewers-quiz" width="280" height="180" class="alignnone size-full wp-image-3348" /></p>
+<ul class="answers ready">
+	<li class="wrong">Nanny McPhee Returns</li>
+	<li class="wrong">Moulin rouge</li>
+	<li class="right">Salmon Fish in the Yemen</li>
+</ul>
+<div class="explanation">
+
+Many spots in London, have been backdrops for a variety of films and so it's not much surprise that many of our City venues have been on the silver screen. Perhaps <a href="http://www.itavenues.co.uk/blog/founders-fame-and-smithfield-market-2" target="_blank">Founders' Hall has seen the most thanks to its connection with St Barthomew's Church</a>
+
+</div>
+</section><section class="question">
+<h2>What was the year 1858 known as?</h2>
+<p><img class="aligncenter size-large wp-image-3236" alt="shutterstock_118016551" src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/shutterstock_118016551.jpg" width="280" height="180" /></p>
+<ul class="answers ready">
+	<li class="wrong">The Great Stench</li>
+	<li class="right">The Great Stink</li>
+	<li class="wrong">The Great Smell</li>
+</ul>
+<div class="explanation">
+
+As late as late as the early 19th century Lord Byron could still go swimming in the Thames near Westminster. However in 1858, partly as result of invention of flushing toilet, and partly due to low water levels in the Thames, the river effectively stopped moving. The Great Stink got so bad that parliament could not meet despite putting up sheets soaked with chloride of lime. Thanks to Joseph Bazalgette, this lead to the creation of London’s modern day sewer. These days the river is much cleaner, not that I have ever been for swim in it.
+
+</div>
+</section><section class="question">
+<h2 class="question">Which of these was not a medieval gate into the City of London?</h2>
+<p><img class="size-full wp-image-3233" alt="Westminster Cathedral" src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/shutterstock_105707822.jpg" width="280" height="180" /></p>
+<ul class="answers ready">
+	<li class="wrong">Ludgate</li>
+	<li class="right">Queen’s Gate</li>
+	<li class="wrong">Newgate</li>
+</ul>
+<div class="explanation">
+
+Queen’s Gate in Kensington was never a medieval gate into the City of London. Ludgate Hill was one the three ancient hills in the city, the other two being Tower Hill and Cornhill. Newgate gave its name to a well-known prison. The other medieval gates included: Bishopsgate, Moorgate and Aldgate, which are all now underground stations.
+
+</div>
+</section><section class="question">
+<h2 class="question">Which of these ships would you find in London?</h2>
+<p>&nbsp;</p>
+<ul class="answers ready">
+	<li class="wrong"><img src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/shutterstock_3048169_2.jpg" alt="shutterstock_3048169_2" width="133" height="200" class="alignnone size-full wp-image-3354" />HMS Victory</li>
+	<li class="wrong"><img src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/shutterstock_11508973_2.jpg" alt="shutterstock_11508973_2" width="133" height="200" class="alignnone size-full wp-image-3355" />HMS Cavalier</li>
+	<li class="right"><img src="http://www.itavenues.co.uk/wp-content/uploads/2013/11/shutterstock_47221_2.jpg" alt="shutterstock_47221_2" width="156" height="200" class="alignnone size-full wp-image-3353" />The Cutty Sark</li>
+</ul>
+<div class="explanation">
+
+The famous tea clipper, the Cutty Sark, can be found in Greenwich and is a landmark on the route of the London Marathon (not to mention one of our venues!) HMS Victory, Nelson’s flagship, can be found in Portsmouth, while HMS Cavalier, a WWII destroyer, can be found in Chatham Historic Dockyard in Kent.
+Another famous ship in London is the Golden Hinde, a reconstruction of the flagship of Sir Francis Drake, the Tudor explorer.
+
+</div>
+</section><section class="question">
+<h2 class="question">The election of the Lord Mayor is done by whom?</h2>
+<p><img src="http://www.itavenues.co.uk/wp-content/uploads/2013/05/Clothworkers-Hall-Chinaware-3-240x135.jpg" alt="Clothworkers&#039; Hall - trophies and wood panels" width="240" height="135" class="alignnone size-thumbnail wp-image-1326" /></p>
+<ul class="answers ready">
+	<li class="right">Liverymen</li>
+	<li class="wrong">Residents of the City of London</li>
+</ul>
+<div class="explanation">It often causes some confusion about the difference between the Lord Mayor of the City of London, and the Mayor of London, two very different roles. The Lord Mayor of London is head of the City of London Corporation which governs the City of London.</div>
+</section><section class="question">
+<h2 class="question">How many people did it take to form the Little Ship Club</h2>
+<p><img src="http://www.itavenues.co.uk/wp-content/uploads/2013/06/Little-Ship-Club-Outside-view-of-River-at-night-2-240x135.jpg" alt="Little Ship Club - Outside view of River at night 2" width="240" height="135" class="alignnone size-thumbnail wp-image-1586" /></p>
+<ul class="answers ready">
+	<li class="wrong">6</li>
+	<li class="wrong">100</li>
+	<li class="right">27</li>
+</ul>
+<div class="explanation">On November 5th 1926 at the Ship Restaurant in Whitehall, 27 enthusiasts met and the Little Ship Club was formed, and by 1932 had over 500 members. Finally in 1960 the majority decided it was time to have its own home on the river near Southwark bridge where it remains a club to this day</div>
+</section><section class="theend" id="arbitraryid2">
+<div id="final-score">You scored <span class="yourscore">0</span> out of a possible <span class="totalscore">0</span>!</div>
+<ul class="rankings">
+	<li class="1">Oh dear, looks like you could benefit from a walking tour!</li>
+	<li class="2">Not too bad but could do with a bit of revision!</li>
+	<li class="3">Well done! You've totally got London Covered!</li>
+</ul>
+<div id="explainranking"></div>
+<a href="http://www.facebook.com/sharer.php?s=%20100&amp;p[title]=ITA+City+Tour+Quiz&amp;p[url]=http%3A%2F%2Fitastaging.co.uk.gridhosted.co.uk%2Fquiz%2F&amp;p[images][0]=http://www.itavenues.co.uk/wp-content/themes/ita-child/images/ita.png&amp;p[summary]=I+scored+{count}+on+the+ITA+city+tour+quiz.++What+will+you+score%3F" target="_blank"><img alt="" src="http://expertvideoempire.com/wp-content/plugins/fb_share_code/facebook-share1.png" /></a>
+
+</section>
 
 
+</div>
 
 </div>
 </body>
 
-        <script src="jquery-1.10.2.min.js"></script>
-        <script src="jQuiz.js"></script>
-
+        
+		
 </html>
